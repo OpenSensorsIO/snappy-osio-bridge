@@ -2,7 +2,23 @@ OpenSensors.io bridge for IOT gateways running [Snappy Ubuntu](https://developer
 
 ## Usage
 
-...
+* Update the config
+
+Edit `src/bridge.js`
+
+* Build the snappy
+
+`$ snapcraft`
+
+* Upload the snappy to a gateway
+
+`$ snappy-remote --url=ssh://REMOTE-GATEWAY install ./osio-bridge_0.0.1_amd64.snap`
+
+* Grant USB access to the snappy
+
+On the remote gateway
+
+`$ sudo snappy osio-bridge.sideload hw-assign /dev/bus/usb/*`
 
 ## License
 

@@ -2,4 +2,5 @@
 parts/
 snap/
 stage/
+*.snap
 src/node_modules

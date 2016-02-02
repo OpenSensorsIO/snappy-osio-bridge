@@ -17,8 +17,8 @@ parts:
   pcsensor:
     plugin: make
     source: git://github.com/OpenSensorsIO/usb-thermometer
-    build-packages: [libudev-dev]
-
+    build-packages: [libusb-dev, libudev-dev]
+    
   nodejs:
     plugin: nodejs
     source: src/
