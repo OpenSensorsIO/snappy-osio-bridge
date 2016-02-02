@@ -1,5 +1,7 @@
 OpenSensors.io bridge for IOT gateways running [Snappy Ubuntu](https://developer.ubuntu.com/en/snappy/).
 
+Please note that currently this repo contains a sensor reading demo, and not yet a complete bridge solution.
+
 ## Usage
 
 * Update the config
