@@ -2,14 +2,25 @@ name: osio-bridge
 version: 0.0.1
 vendor: Martin Trojer <martin@opensensors.io>
 summary: OpenSensors.io sensor gateway
-description: Connect sensors to OpenSensors.io via a IOT gatway running snappy
+description: Connect sensors to OpenSensors.io via a IOT gateway running snappy
 icon: icon.png
+
+build-packages:
+  - libudev-dev
+
+binaries:
+  sensor-temp-pcsensor:
+    exec: usr/local/bin/pcsensor
 
 services:
   osio-bridge:
     start: bin/node bin/osio-bridge
 
 parts:
+  pcsensor:
+    plugin: make
+    source: git://github.com/OpenSensorsIO/usb-thermometer
+
   nodejs:
     plugin: nodejs
     source: src/
