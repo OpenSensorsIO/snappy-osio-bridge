@@ -1,0 +1,15 @@
+name: osio-bridge
+version: 0.0.1
+vendor: Martin Trojer <martin@opensensors.io>
+summary: OpenSensors.io sensor gateway
+description: Connect sensors to OpenSensors.io via a IOT gatway running snappy
+icon: icon.png
+
+services:
+  osio-bridge:
+    start: bin/node bin/osio-bridge
+
+parts:
+  nodejs:
+    plugin: nodejs
+    source: src/

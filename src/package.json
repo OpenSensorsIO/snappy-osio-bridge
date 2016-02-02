@@ -1,0 +1,13 @@
+{
+  "name": "osio-bridge",
+  "version": "0.0.1",
+  "description": "Runs on MQTT bridges to connect them to OpenSensors.io",
+  "author": "Martin Trojer <martin@opensensors.io>",
+  "bin": {
+    "osio-bridge": "./bridge.js"
+  },
+  "dependencies": {
+    "mqtt": "*",
+    "log4js": "*"
+  }
+}
