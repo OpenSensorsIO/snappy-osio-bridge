@@ -24,7 +24,7 @@ On the remote gateway
 
 ## License
 
-Copyright © 2014 opensensors.io
+Copyright © 2016 opensensors.io
 
 Azondi is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
