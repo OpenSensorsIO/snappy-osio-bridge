@@ -1,8 +1,8 @@
 name: osio-bridge
-version: 0.0.1
+version: 0.0.4
 vendor: Martin Trojer <martin@opensensors.io>
 summary: OpenSensors.io sensor gateway
-description: Connect sensors to OpenSensors.io via a IOT gateway running snappy
+description: Connect sensors to OpenSensors.io via a IOT gateway ubuntu core
 icon: icon.png
 
 binaries:
@@ -11,6 +11,7 @@ binaries:
 
 services:
   osio-bridge:
+    description: Connect sensors to OpenSensors.io via a IOT gateway ubuntu core
     start: bin/node bin/osio-bridge
 
 parts:
@@ -18,7 +19,7 @@ parts:
     plugin: make
     source: git://github.com/OpenSensorsIO/usb-thermometer
     build-packages: [libusb-dev, libudev-dev]
-    
+
   nodejs:
     plugin: nodejs
     source: src/

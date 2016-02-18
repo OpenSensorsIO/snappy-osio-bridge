@@ -20,7 +20,9 @@ Edit `src/bridge.js`
 
 On the remote gateway
 
-`$ sudo snappy osio-bridge.sideload hw-assign /dev/bus/usb/*`
+`$ sudo snappy hw-assign osio-bridge.sideload /dev/bus/usb/00*/*`
+
+Replace the '*' with something else
 
 ## License
 
